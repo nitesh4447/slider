@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img src="" height="600px" width="100%" alt="">
+
+    <script>
+        let data = ["https://images.unsplash.com/photo-1713783479486-312f89193721?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",  "https://images.unsplash.com/photo-1713888488745-fff63f58d157?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" , "https://images.unsplash.com/photo-1713894708806-bc01a6bed8e3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
+
+let currentindex=0;
+
+setInterval(()=>{
+    currentindex=(currentindex + 1)% data.length;
+    document.querySelector('img').src=data[currentindex]
+
+},1000)
+
+
+    </script>
+
+
+</body>
+</html>
